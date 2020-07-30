@@ -76,7 +76,7 @@ html {
   align-items: center;
   flex-direction: column;
   margin-top: 100px;
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 
@@ -84,14 +84,11 @@ html {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-              <div class="block-name-img">
-  flex-grow: 1;
 }
 
 .cadre {
   margin: 4%;
 }
-
 
 .name {
   font-family: Poppins;
@@ -164,10 +161,6 @@ html {
   .description {
     font-size: 1.4rem;
     margin-top: 8px;
-  }
-
-  .wrapper {
-    width: 100%;
   }
 
   .ligne {
