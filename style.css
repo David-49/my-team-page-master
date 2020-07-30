@@ -84,16 +84,14 @@ html {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+              <div class="block-name-img">
+  flex-grow: 1;
 }
 
 .cadre {
-  margin: 40px;
-  position: relative;
+  margin: 4%;
 }
 
-.ligne2 .cadre {
-  margin: 0 40px 40px 40px;
-}
 
 .name {
   font-family: Poppins;
@@ -103,43 +101,19 @@ html {
   margin-top: 10px;
 }
 
+.block-name-img {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .job {
-  position: absolute;
-  transform: rotate(90deg);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
   font-family: PT Serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 1.2rem;
   text-transform: uppercase;
-}
-
-.job1 {
-  right: -60px;
-  top: 45px;
-}
-
-.job2 {
-  right: -53px;
-  top: 36px;
-}
-
-.job3 {
-  right: -42px;
-  top: 25px;
-}
-
-.job4 {
-  right: -50px;
-  top: 34px;
-}
-.job5 {
-  right: -45px;
-  top: 28px;
-}
-
-.job6 {
-  right: -45px;
-  top: 28px;
+  justify-self: start;
+  align-self: start;
 }
 
 .block-img {
@@ -158,7 +132,7 @@ html {
   margin-top: 120px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 534px) {
   .content {
     padding-top: 100px;
     width: 100%;
