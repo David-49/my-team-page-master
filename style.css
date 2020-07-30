@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.attribution {
+  position: absolute;
+  font-size: 1.6rem;
+  font-family: Poppins;
+  z-index: 9999;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.attribution a:first-child:hover {
+  background-color: black;
+  color: white;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  padding: 2px;
+}
+
+.content {
+  position: relative;
+  margin: auto;
+  padding-top: 100px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-size: 3.6rem;
+  font-weight: bold;
+  font-family: "Pt Serif";
+  letter-spacing: -0.045em;
+}
+
+.description-block {
+  width: 40%;
+}
+
+.description-title {
+  font-size: 1.8rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: 1.8rem;
+  font-family: Poppins;
+  font-style: normal;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 80%;
+  margin: auto;
+}
+
+.ligne {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cadre {
+  margin: 40px;
+  position: relative;
+}
+
+.ligne2 .cadre {
+  margin: 0 40px 40px 40px;
+}
+
+.name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-top: 10px;
+}
+
+.job {
+  position: absolute;
+  transform: rotate(90deg);
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.job1 {
+  right: -60px;
+  top: 45px;
+}
+
+.job2 {
+  right: -53px;
+  top: 36px;
+}
+
+.job3 {
+  right: -42px;
+  top: 25px;
+}
+
+.job4 {
+  right: -50px;
+  top: 34px;
+}
+.job5 {
+  right: -45px;
+  top: 28px;
+}
+
+.job6 {
+  right: -45px;
+  top: 28px;
+}
+
+.block-img {
+  width: 200px;
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.ligne .cadre:nth-child(2),
+.cadre:nth-child(5) {
+  margin-top: 120px;
+}
+
+@media screen and (max-width: 375px) {
+  .content {
+    padding-top: 100px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .attribution {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+
+  .description-block {
+    width: 80%;
+  }
+
+  .description-title {
+    margin-top: 30px;
+  }
+
+  .description {
+    font-size: 1.4rem;
+    margin-top: 8px;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .ligne {
+    width: 100%;
+  }
+
+  .cadre {
+    margin: auto;
+  }
+
+  .ligne .cadre {
+    margin-top: 0;
+  }
+
+  .ligne .cadre:nth-child(2n + 2) {
+    margin-top: 60px;
+  }
+
+  .block-img {
+    width: 150px;
+  }
+
+  .name {
+    font-size: 1.4rem;
+  }
+
+  .job {
+    font-size: 1rem;
+  }
+}
